@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane prefHeight="500.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hr.java.vjezbe.javafx.PocetniEkranController">
+	<top>
+		<MenuBar BorderPane.alignment="CENTER">
+			<menus>
+				<Menu mnemonicParsing="false" text="Artikli">
+					<items>
+						<Menu mnemonicParsing="false" text="Automobil">
+							<items>
+								<MenuItem mnemonicParsing="false" onAction="#prikaziEkranZaPretraguAutomobila" text="Pretraga" />
+                        <MenuItem mnemonicParsing="false" onAction="#prikaziEkranZaUnosAutomobila" text="Unos" />
+							</items>
+						</Menu>
+						<Menu mnemonicParsing="false" text="Stan">
+							<items>
+								<MenuItem mnemonicParsing="false" onAction="#prikaziEkranZaPretraguStanova" text="Pretraga" />
+                        <MenuItem mnemonicParsing="false" onAction="#prikaziEkranZaUnosStana" text="Unos" />
+							</items>
+						</Menu>
+						<Menu mnemonicParsing="false" text="Usluga">
+							<items>
+								<MenuItem mnemonicParsing="false" onAction="#prikaziEkranZaPretraguUsluga" text="Pretraga" />
+                        <MenuItem mnemonicParsing="false" onAction="#prikaziEkranZaUnosUsluge" text="Unos" />
+							</items>
+						</Menu>
+					</items>
+				</Menu>
+				<Menu mnemonicParsing="false" text="Korisnici">
+					<items>
+						<Menu mnemonicParsing="false" onAction="#prikaziEkranZaPretraguPrivatnihKorisnika" text="Privatni korisnik">
+							<items>
+								<MenuItem mnemonicParsing="false" text="Pretraga" />
+                        <MenuItem mnemonicParsing="false" onAction="#prikaziEkranZaUnosPrivatnogKorisnika" text="Unos" />
+							</items>
+						</Menu>
+						<Menu mnemonicParsing="false" text="Poslovni korisnik">
+							<items>
+								<MenuItem mnemonicParsing="false" onAction="#prikaziEkranZaPretraguPoslovnihKorisnika" text="Pretraga" />
+                        <MenuItem mnemonicParsing="false" onAction="#prikaziEkranZaUnosPoslovnogKorisnika" text="Unos" />
+							</items>
+						</Menu>
+					</items>
+				</Menu>
+			</menus>
+		</MenuBar>
+	</top>
+	<center>
+		<ImageView fitHeight="250.0" fitWidth="400.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+			<image>
+				<Image url="@oglas.jpeg" />
+			</image>
+		</ImageView>
+	</center>
+</BorderPane>

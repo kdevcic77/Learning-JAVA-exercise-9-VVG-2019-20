@@ -1,0 +1,36 @@
+1
+1
+Krešimir
+Devèiæ
+kdevci1@vvg.hr
+011234567
+2
+2
+Devagro d.o.o
+www.devagro.com
+devagro@dvg.hr
+012223333
+1
+3
+Magdalena
+Devèiæ
+mdevcic@vvg.hr
+017654321
+2
+4
+Magdalena d.d.
+www.magdalena.com
+magdalena@mag.hr
+014444444
+2
+5
+Industrial ltd.
+www.industrial.com
+industrial@industrial.hr
+021565656
+1
+6
+Ivan
+Devèiæ
+idevcic@vvg.hr
+012323568

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hr.java.vjezbe.javafx.PretragaStanovaController">
+   <top>
+      <Label text="Pretraga stanova" BorderPane.alignment="CENTER">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+   </top>
+   <bottom>
+      <TableView fx:id="stanTableView" prefHeight="200.0" prefWidth="372.0" BorderPane.alignment="CENTER">
+        <columns>
+          <TableColumn fx:id="naslovTableColumn" prefWidth="75.0" text="Naslov" />
+          <TableColumn fx:id="opisTableColumn" prefWidth="75.0" text="Opis" />
+            <TableColumn fx:id="kvadraturaTableColumn" prefWidth="75.0" text="Kvadratura" />
+            <TableColumn fx:id="stanjeTableColumn" prefWidth="75.0" text="Stanje" />
+            <TableColumn fx:id="cijenaTableColumn" prefWidth="75.0" text="Cijena" />
+        </columns>
+      </TableView>
+   </bottom>
+   <center>
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label fx:id="naslov" prefHeight="17.0" prefWidth="72.0" text="Naslov:" />
+                  <TextField fx:id="txtFieldNaslov" alignment="CENTER_RIGHT" prefHeight="25.0" prefWidth="150.0" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label fx:id="opis" prefHeight="17.0" prefWidth="72.0" text="Opis:" />
+                  <TextField fx:id="txtFieldOpis" alignment="CENTER_RIGHT" prefHeight="25.0" prefWidth="150.0" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label fx:id="kvadratura" prefHeight="17.0" prefWidth="72.0" text="Kvadratura:" />
+                  <TextField fx:id="txtFieldKvadratura" alignment="CENTER_RIGHT" prefHeight="25.0" prefWidth="150.0" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label fx:id="cijena" prefHeight="17.0" prefWidth="72.0" text="Cijena:" />
+                  <TextField fx:id="txtFieldCijena" alignment="CENTER_RIGHT" prefHeight="25.0" prefWidth="150.0" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="buttonPretraga" contentDisplay="CENTER" mnemonicParsing="false" onAction="#pretragaStanova" text="Pretraži" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>
